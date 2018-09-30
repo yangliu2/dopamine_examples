@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 BASE_PATH = '/tmp/colab_dope_run'
 GAME = 'Asterix'
 
-experimental_data = colab_utils.load_baselines('/content')
+experimental_data = colab_utils.load_baselines('content')
 
 # Create an agent based on DQN, but choosing actions randomly.# @titl 
 
