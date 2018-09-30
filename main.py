@@ -54,6 +54,7 @@ def main():
   random_dqn_data = colab_utils.read_experiment(LOG_PATH, verbose=True)
   random_dqn_data['agent'] = 'MyRandomDQN'
   random_dqn_data['run_number'] = 1
+  print(experimental_data.__dict__)
   experimental_data[GAME] = experimental_data[GAME].merge(random_dqn_data,
                                                           how='outer')
 
